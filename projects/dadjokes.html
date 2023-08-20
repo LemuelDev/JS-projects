@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DadJokes</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h3> DADBOD JOKES</h3>
+        <div class="container">
+            <div class="jokes" id="biro">
+
+            </div>
+            <p> Want some Jokes? Click Me.</p>
+            <button onclick="dadjokes()">
+                Jokesss
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let index= "";
+        function dadjokes(){
+            let jokes = ["What do you call a man with no body and nose? NOBODY NOSE", 
+
+            "I had a dream that I weighed less than a thousand of a gram. I was like 0mg!!!",
+
+             "My dog is a genius. I asked him, What's two minus two? He said nothing.",
+
+             "Im friends with almost all the letters of the alphabet. I just dont know Y.",
+
+             "Were renovating the house, and the first floor is going great, but the second floor is another story.",
+
+             "I used to be able to play piano by ear, but now I have to use my hands.",
+
+             "Every night, I have hard time remembering something, but then it dawns on me.",
+
+             "I was wondering why the baseball kept getting bigger and bigger. Then it hit me.",
+
+             "I just paid $100 for a belt that doesnt fit — what a huge waist!", 
+
+             "I finally watched that documentary on clocks. It was about time.",
+
+             "I love telling Dad jokes. Sometimes, he even laughs. Thank Youuuuuuuuu",
+
+             "lemuel_dev||2023"
+
+            ];
+
+            let biro = document.getElementById("biro");
+            biro.innerText = jokes[index++];
+            if (index > jokes.length - 1)
+            index = "";
+        }
+    </script>
+</body>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+        font-family:  'Times New Roman', Times, serif;
+        background: #6bb2ca;
+    }
+    .wrapper {
+        display: grid;
+        place-content: center;
+        align-items: center;
+        min-height: 100vh;
+        text-align: center;
+    }
+    .container {
+        border-radius: 10px;
+        border: 1px solid #111;
+        padding-block: 3rem;
+        padding-inline: 1rem;
+        width: 400px;
+        background: lightgreen;
+    }
+    p {
+        margin-top: 2rem;
+        font-size: 1.1rem;
+        letter-spacing: 1.3px;
+    }
+    .jokes {
+        width: 100%;
+        padding-inline: 2rem;
+        height: 150px;
+        border: 1px solid #111;
+        font-size: 1.1rem;
+        letter-spacing: 1.1px;
+        padding-block: 3rem;
+        padding-inline: 1rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+    button {
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        letter-spacing: 1.5px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        background: rgb(204, 107, 196);
+    }
+</style>
+</html>

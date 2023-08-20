@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section>
+
+        <div class="wrapper">
+            <div class="content">
+                <h4 class="title"> Palindrome Checker <br> App</h4>
+                <div class="input-section">
+                    <input type="text" class="textbox" id="textBox" placeholder="Enter a Word">
+                    <button class="submitBtn">
+                        Enter
+                    </button>
+                </div>
+                <p class="checkResults">
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+
+        const textBox = document.querySelector('#textBox')
+        const submitBtn = document.querySelector('.submitBtn')
+        const checkResults = document.querySelector('.checkResults')
+
+
+        function palindromeCheck(str) {
+            let textInput = str.replace(/[^\w]/g, '').toLowerCase();
+            // let reversedTextInput = textInput.split('').reverse().join('');
+            return textInput === textInput.split('').reverse().join('');;
+        }
+
+        submitBtn.addEventListener('click', function() {
+            let result = palindromeCheck(textBox.value);
+            if (result) {
+                checkResults.innerHTML = 'It is a Palindrome';
+            } else {
+                checkResults.innerHTML = 'It is not a Palindrome';
+            }
+            if (!textBox.value) {
+            checkResults.innerHTML = 'Please input some word'
+        }
+}); 
+
+
+       
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

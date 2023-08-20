@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click-Attack Game</title>
+
+    <!-- fonts POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    
+    <!-- external stylesheet -->
+    <link rel="stylesheet" href="game.css">
+
+    <!-- link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <section>
+        <div class="title">
+            <h4>Click-Attack Game</h4>
+            <p class="scoreboard">Win: 0, Lose: 0</p>
+        </div>
+        <div class="wrapper">
+            <div class="left-content">
+                <p class="lifeBarUser life">
+                    100
+                </p>
+                <i class="fa-solid fa-user"></i>
+                <p>You</p>
+              
+            </div>
+            <div class="right-content">
+                <p class="lifeBarComputer life">
+                     100
+                </p>
+                <i class="fa-solid fa-robot"></i>
+                <p>Computer</p>
+            </div>
+        </div>
+
+        <button class="attack-btn">
+            Attack
+        </button>
+
+        <p class="trashtalk-text"></p>
+
+    </section>
+
+
+    <script src="game.js"></script>
+    
+
+</body>
+</html>

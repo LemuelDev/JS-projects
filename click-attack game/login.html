@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLick-Attack Game (Login/Signup)</title>
+
+    <!-- fonts POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+    <!-- external stylesheet -->
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+    
+    <section>
+        <div class="main-content">
+            <h4 class="title">
+                Click-Attack Game
+            </h4>
+        </div>
+        <div class="wrapper">
+            <h4> Login Here</h4>
+            <span>Username:</span>
+            <input type="email" placeholder="Email Here" class="field" id="emailInput">
+            <span>Password:</span>
+            <input type="password" placeholder="Password Here" id="passwordInput" class="field">
+            <button class="enterBtn">
+                Enter
+            </button>
+            <p> Don't have an  account? <a href="signup.html">Sign up</a></p>
+        </div>
+    </section>
+
+
+    <script>
+
+        const emailInput = document.querySelector('#emailInput')
+        const passwordInput = document.querySelector('#passwordInput')
+        const enterBtn = document.querySelector('.enterBtn')
+
+        function validate() {
+            if (emailInput.value == 'johnlemuelencina30@gmail.com' && passwordInput.value == 'jlencina30') {
+                window.location= 'game.html'
+            }else {
+                alert('Wrong Email or Password.')
+            }
+        
+        }
+        enterBtn.addEventListener('click', validate)
+
+    </script>
+
+</body>
+</html>

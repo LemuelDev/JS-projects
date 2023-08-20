@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #245953;
+    color: #fff;
+}
+
+section {
+    display: grid;
+    place-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-inline: 1rem;
+}
+.title h4 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    padding-block: 2rem;
+}
+.rock, .paper, .scissors {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+.rock i, .paper i, .scissors i{
+    padding-block: .8rem;
+    padding-inline: .8rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    border: 1px solid #fff;
+    background-color: #159895;
+}
+.btn {
+    padding: .5rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: #e26d6d;
+    margin-block: 1rem;
+    transition: ease .3s all;
+}
+
+.btn:hover {
+    background-color: #8d2a2a;
+    color: #fff;
+}

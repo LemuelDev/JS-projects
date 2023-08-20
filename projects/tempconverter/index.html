@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="main">
+       <div class="wrapper">
+        <div class="title">
+            <P> Temperature Converter</P>
+        </div>
+        <div class="content">
+            <div class="celsius">
+                <div class="celsius-title">
+                    <h4> Celsius to Fahrenheit</h4>
+                </div>
+                <div class="celsius-content">
+                 <input type="number"  id="celsiusbox">
+                <button id="convert1" onclick="celtofah()"> Convert </button>
+                </div>
+            </div>
+            <div class="fahrenheit">
+                <div class="fah-title">
+                    <h4> Fahrenheit to Celsius  </h4>
+                </div>
+                <div class="fah-content">
+                 <input type="number"  id="fahbox">
+                <button id="convert2" onclick="fahtocel()"> Convert </button>
+                </div>
+            </div>
+            <div class="kelvin">
+                <div class="fah-title">
+                    <h4> Kelvin to Celsius </h4>
+                </div>
+                <div class="fah-content">
+                 <input type="number"  id="kelbox">
+                <button id="convert3" onclick="keltocel()"> Convert </button>
+                </div>
+            </div>
+        </div>
+       </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

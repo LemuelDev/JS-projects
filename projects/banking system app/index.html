@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <div class="wrapper">
+            <div class="content">
+                <div class="title">
+                    <h4>Banking System App</h4>
+                </div>
+                <div class="top-content">
+                    <div class="deposit-section">
+                        <h4>Deposit</h4>
+                        <input type="number" placeholder="Enter Amount" id="depositInput">
+                        <button class="depositBtn">
+                            Deposit
+                        </button>
+                    </div>
+                    <div class="withdraw-section">
+                        <h4>Withdraw</h4>
+                        <input type="number" placeholder="Enter Amount" id="withdrawInput">
+                        <button class="withdrawBtn">
+                            Withdraw
+                        </button>
+                        <p class="errorMessage"></p>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="balance">
+                        <h4>Balance</h4>
+                        <p id="balanceResult">0</p>
+                    </div>
+                    <div class="recent-activities">
+                        <div class="activity-content">
+                            <h4> Recent Activity</h4>
+                          <p class="activity"></p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+    <script src="main.js"></script>
+
+
+
+</body>
+</html>

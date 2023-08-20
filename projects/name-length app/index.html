@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Length App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="wrapper">
+        <div class="content">
+            <div class="title">
+                <h4>Name Length App</h4>
+            </div>
+            <div class="main-content">
+               <div>
+                <input type="text" id="nameInput" placeholder="Enter Here" onkeydown=" if (event.target === 'enter') {
+                    renderitems()
+                }">
+                <button id="submitBtn"> Submit</button>
+               </div>
+               <p id="resultofName"></p>
+               <p id="lengthofName"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="main.js"></script>
+
+
+</body>
+</html>

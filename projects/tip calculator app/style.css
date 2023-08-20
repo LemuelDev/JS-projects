@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #F4EEE0;
+}
+.wrapper {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: #393646;
+   
+}
+.content {
+    max-width: 750px;
+    padding: 3rem 4rem;
+    border-radius: 10px;
+    line-height: 2rem;
+    background-color: #6D5D6E;
+}
+.wrapper-title {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.main-content p {
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: .5px;
+    padding-block: 1rem;
+}
+.main-content .field {
+    width: 100%;
+    padding: .6rem;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1em;
+}
+
+.symbol, .symbol2 {
+    position: relative;
+}
+.symbol::before {
+    position: absolute;
+    top: -5px;
+    content: "$";
+    left: 5px;
+    bottom: 20px;
+    color: #393646;
+    font-size: 1.1rem;
+}
+.symbol2::before {
+    position: absolute;
+    top: -5px;
+    content: "%";
+    left: 5px;
+    bottom: 20px;
+    color: #393646;
+    font-size: 1.1rem;
+}
+.people-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.first div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.first p {
+    text-align: center;
+    padding-bottom: .8rem;
+    font-size: 1.3em;
+}
+.last p {
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+    font-size: 1.3em;
+}
+.last h4, .first div p {
+    text-align: center;
+    font-size: 1.5em;
+}
+.first div button {
+    padding: .5em;
+    border-radius: 50%;
+    border: none;
+    font-size: 1em;
+}
+.last h4 {
+    margin-top: .1em;
+}

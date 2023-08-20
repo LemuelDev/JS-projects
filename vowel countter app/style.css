@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+.title {
+    font-size: 4rem;
+    padding-block: 1rem;
+    letter-spacing: 2px;
+}
+.credits {
+    padding-top: 2rem;
+    font-size: 1.1em;
+}
+#textboxInput {
+    min-width: 650px;
+    height: 50px;
+    margin: 0 auto;
+    padding-inline: 1rem;
+}
+.submitBtn {
+    display: block;
+    padding: .6rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: green;
+    max-width: 200px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.vowelResult {
+    font-size: 1.1em;
+    padding-top: 2rem;
+}
+
+@media(max-width: 700px) {
+    #textboxInput {
+    min-width: 450px;
+    }
+    .title {
+        font-size: 3.5rem;
+    }
+}
+
+@media(max-width: 500px) {
+    #textboxInput {
+    min-width: 250px;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+}

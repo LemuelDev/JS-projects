@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <script>
+        let win = 0;
+        let lose = 0;
+        let tie = 0;
+      
+        function getComputerMove() {
+          const randomNumber = Math.random();
+          if (randomNumber < 1 / 3) {
+            return 'rock';
+          } else if (randomNumber < 2 / 3) {
+            return 'paper';
+          } else {
+            return 'scissors';
+          }
+        }
+      
+        function play(move) {
+          const computerMove = getComputerMove();
+          let result = '';
+          if (move === 'rock') {
+            if (computerMove === 'rock') {
+              result = 'Tie';
+              tie++;
+            } else if (computerMove === 'paper') {
+              result = 'You Lose';
+              lose++;
+            } else {
+              result = 'You Win';
+              win++;
+            }
+          } else if (move === 'paper') {
+            if (computerMove === 'rock') {
+              result = 'You Win';
+              tie++;
+            } else if (computerMove === 'paper') {
+              result = 'Tie';
+              lose++;
+            } else {
+              result = 'You Lose';
+              win++;
+            }
+          }else {
+            if (computerMove === 'rock') {
+              result = 'You Lose';
+              tie++;
+            } else if (computerMove === 'paper') {
+              result = 'You Win';
+              lose++;
+            } else {
+              result = 'Tie';
+              win++;
+            }
+          }
+          alert(`You picked ${move}. Computer picked ${computerMove}. ${result}. Scores: WIN: ${win}, LOSE: ${lose}, TIE: ${tie}`);
+        }
+      </script>
+      
+      <section class="main">
+        <div class="title">
+          <h4>ROCK PAPER SCISSORS</h4>
+        </div>
+        <div class="choices">
+          <div class="rock">
+            <i class="fa-solid fa-hand-back-fist"></i>
+            <button onclick="play('rock')" class="btn">ROCK</button>
+          </div>
+          <div class="paper">
+            <i class="fa-solid fa-hand"></i>
+            <button onclick="play('paper')" class="btn">PAPER</button>
+          </div>
+          <div class="scissors">
+            <i class="fa-solid fa-hand-peace"></i>
+            <button onclick="play('scissors')" class="btn">SCISSORS</button>
+          </div>
+        </div>
+      </section>
+</body>
+</html>

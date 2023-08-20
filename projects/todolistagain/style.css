@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color: #393646;
+    --txt-clr: #F4EEE0;
+    --second-clr: #6D5D6E;
+    --third-clr: #4F4557;
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--txt-clr);
+}
+.wrapper {
+    padding-block: 4rem;
+    display: grid;
+    place-content: center;
+}
+.content {
+    padding: 5rem 3rem;
+    border: 1px solid var(--txt-clr);
+    border-radius: 5px;
+    min-width: 550px;
+    display: grid;
+    place-content: center;
+}
+.title {
+    font-size: 2rem;
+    padding-block: 1rem;
+    text-align: center;
+}
+.search-content {
+    padding-bottom: 1rem;
+}
+#listInput {
+    padding: .5rem 1.5rem;
+    font-size: 1.1em;
+    background-color: var(--second-clr);
+    color: var(--txt-clr);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 5px rgba(0,0,0, .5);
+}
+#listInput::placeholder {
+    color: var(--txt-clr);
+    padding-left: .5rem;
+}
+#submitNameBtn {
+    padding: .6rem 1rem;
+    font-size: 1.1em;
+    background-color: var(--third-clr);
+    color: var(--txt-clr);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0, .5);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s all;
+    margin-left: 1rem;
+}
+#submitNameBtn:hover {
+    background-color: var(--second-clr);
+}
+.listresult {
+    display: grid;
+    place-content: center;
+    padding-inline: 1rem;
+
+}
+.listresult div {
+    box-shadow: 5px 5px 5px rgba(0,0,0, .5);
+    padding-inline: 3rem;
+    padding-block: 2rem;
+    max-width: 330px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-items: center;
+    border-radius: 5px;
+    border-top: 1px solid var(--txt-clr);
+    border-left: 1px solid var(--txt-clr);
+    margin-bottom: 1rem;
+}
+.p {
+    font-size: 1.1em;
+    line-height: 1.2rem;
+}
+.btn {
+    padding: .6rem 1rem;
+    font-size: 1.1em;
+    background-color: var(--third-clr);
+    color: var(--txt-clr);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0, .5);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s all;
+}

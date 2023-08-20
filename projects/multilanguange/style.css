@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+body {
+    background-color: bisque;
+}
+.content {
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+    align-items: center;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+}
+.content h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+.buts {
+    display: grid;
+    padding-top: .5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+}
+button {
+    padding: .7rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #111;
+    box-shadow: 0 10px 10px rgba(0,0,0, .5) ;
+}
+#japan {
+    background-color: aqua;
+}
+#spain {
+    background-color: coral;
+}
+#fil {
+    background-color: darkcyan;
+}
+#reset{
+    background-color: lightslategray;
+} 
+#italy {
+    background-color: crimson;
+}
+#french {
+    background-color: darkseagreen;
+}
+.reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

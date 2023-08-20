@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: url(./wave-haikei.svg) no-repeat center;
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+}
+section {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+.title {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+.wrapper {
+    box-shadow: 2px 2px 2px 1px #fff;
+    border-radius: 5px;
+    padding: 3rem 5rem;
+    max-width: 400px;
+    line-height: 2rem;
+    display: grid;
+    text-align: start;
+}
+.wrapper h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+.wrapper span {
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    padding-top: .3rem;
+}
+.field {
+    padding: .6rem;
+    border-radius: 2px;
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    transition: .3s all;
+    outline-color: #0066FF;
+    outline-width: 2px;
+    cursor: grab;
+}
+.field:hover {
+    background-color: #cbcbcb;
+}
+.enterBtn {
+    margin-top: 1rem;
+    padding: .5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #0066FF;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+.enterBtn:hover {
+    background-color: #0d5ed7;
+}
+
+.wrapper p {
+    padding-block: .5rem;
+    font-size: 1.1rem;
+}
+.wrapper p a {
+    text-decoration: none;
+    color: #0066FF;
+    font-weight: bold;
+    transition: .3s;
+}
+.wrapper p a:hover{
+    color: #fff;
+}

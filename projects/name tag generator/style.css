@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color: #393646;
+    --txt-clr: #F4EEE0;
+    --second-clr: #6D5D6E;
+    --third-clr: #4F4557;
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--txt-clr);
+}
+.wrapper {
+    display: grid;
+    place-content: center;
+    padding: 4rem;
+}
+.main-content {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 5rem;
+    line-height: 1.4em;
+    border: 1px solid #F4EEE0;
+    place-content: center;
+    border-radius: 10px;
+    box-shadow: 5px 3px 3px var(--txt-clr);
+}
+.main-content .title {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.search-input-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.5rem;
+
+}
+#nameInput {
+    padding: .5rem 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #aaa;
+    font-size: 1.1em;
+}
+.submitNameBtn {
+    padding: .6rem 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--txt-clr);
+}
+
+.grid-wrapper {
+    padding: 3rem;
+    
+}
+.removeBtn {
+    text-align: right;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: .5rem;
+    display: grid;
+    place-content: end;
+    position: relative;
+    right: 0;
+    border-radius: 5px;
+    border: none;
+}
+
+#grid-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px , auto));
+    gap: 1rem;
+    place-content: center;
+
+}
+.grid-boxes {
+    max-width: 300px;
+    height: 250px;
+    border-radius: 5px;
+    background-color: var(--second-clr);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0,0,0, .5);
+}
+
+ .top {
+    padding-bottom: .8rem;
+    font-size: 1.6rem;
+}
+ .p{
+    font-size: 1.1rem;
+    padding-top: .8rem;
+}
+.grid-boxes .bottom {
+    background-color: var(--txt-clr);
+    color: var(--bg-color);
+    padding-block: .8rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}

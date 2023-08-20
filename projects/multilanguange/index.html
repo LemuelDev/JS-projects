@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons of 3</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="content">
+        <h3 id="title"> Hello World </h3>
+        <div class="buts">
+            <button id="japan"> Japanese </button>
+            <button id="spain"> Spanish </button>
+            <button id="fil"> Filipino </button>
+            <button id="italy"> Italian</button>
+            <button id="reset"> English </button>
+            <button id="french"> French</button>
+        </div>
+       
+    </div>
+
+
+<script>
+    const title = document.getElementById('title');
+    const japan = document.querySelector("#japan");
+    const fil = document.querySelector("#fil");
+    const spain = document.querySelector("#spain");
+    const italy = document.getElementById('italy');
+    const french = document.getElementById('french');
+    const reset = document.getElementById('reset')
+
+    japan.addEventListener('click', function() {
+        title.innerText = 'ハローワールド';
+        title.style.color = 'black'
+    });
+
+    spain.addEventListener('click', function() {
+       title.innerText = 'Hola mundo'
+       title.style.color = 'coral'
+    });
+
+    fil.addEventListener('click', function() {
+        title.innerText = 'Grabe Ba';
+        title.style.color = 'darkcyan';
+    });
+
+    italy.addEventListener('click', function() {
+        title.innerText = 'salve, mondo';
+        title.style.color = 'crimson';
+    });
+
+
+    french.addEventListener('click', function() {
+        title.innerText = 'Salut tout le monde';
+        title.style.color = 'darkseagreen';
+    });
+    
+    reset.addEventListener('click', function() {
+        title.innerText = 'Hello World';
+        title.style.color = 'black';
+    });
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

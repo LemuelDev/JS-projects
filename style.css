@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+body {
+    background-color: #27374D;
+    color: #DDE6ED;
+}
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    background-color: #526D82;
+    height: 130vh;
+    transition: .5s ease all;
+    display: none;
+}
+.lists {
+    line-height: 1.8rem;
+    text-align: center;
+    padding-top: .5rem;
+  
+}
+.lists h1 {
+    text-align: end;
+    font-size: 1.5rem;
+    padding-right: .5rem;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.lists h1:hover {
+    color: #27374D;  
+}
+.lists h4 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+.lists ol li {
+    cursor: pointer;
+    transition: .3s all;
+}
+.lists ol li a {
+    color: #DDE6ED;
+    text-decoration: none;
+}
+.lists ol li:hover {
+    background-color: #9DB2BF;
+    color: #27374D;
+}
+main {
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+    text-align: center;
+}
+.title {
+
+    max-width: 450px;
+    padding: 2rem;
+    height: 200px;
+    display: grid;
+    place-content: center;
+
+}
+.title h4 {
+    font-size: 2em;
+    padding-bottom: 1rem;
+}
+#projectBtn {
+    max-width: 10em;
+    margin: 0 auto;
+    padding: .7rem 1rem;
+    border-radius: 5px;
+    background-color: #96c4f9;
+    font-size: 1.1em;
+    border: none;
+    outline: none;
+    transition: .45s;
+    cursor: pointer;
+}
+
+  
+  #projectBtn:hover {
+    background-color: #7ab3f5;
+  }

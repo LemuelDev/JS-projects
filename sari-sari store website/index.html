@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Store</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+<body>
+    
+
+    <!-- hompage section -->
+    <section class="homepage" id="home">
+
+        <header>
+            <div class="logo">
+                <h4>Mini-Store</h4>
+            </div>
+            <input type="checkbox" id="menu" hidden>
+            <label for="menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <nav>
+                <label for="menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#item" class="productBtn">Products</a></li>
+                    <li><a href="#" class="cartIcon"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="homepage-title">
+            <div class="content">
+                <h4>Mini-Store</h4>
+                <p>Lorem ipsum dolor sit amet consectet cum laborum nihil? Laudantium corrupti dicta aliquam ex earum a necessitatibus?</p>
+                <a href="#item" class="exploreMore">Explore More</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="items" id="item">
+        <div class="items-title">
+            <h4>Bili na mga Suki</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nobis autem? Quaerat, nam optio doloribus nemo neque nulla voluptate porrdebitis cumque maxime?</p>
+        </div>
+        <div class="content-wrapper">
+            <div class="main-wrapper">
+                <div class="item" id="chicken">
+                    <h4 class="cart-name"> Homi (Chicken) </h4>
+                    <img src="./img/homi_chicken.png" class="item-pic">
+                    <div class="cart-item">
+                        <p class="cart-total">$2.50</p>
+                        <button class="addToCart" data-product-name="Homi (Chicken)" data-product-price="$2.50">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <h4 class="cart-name" id="sardines"> Sardines (Red) </h4>
+                    <img src="./img/sardines_red.png" class="item-pic">
+                    <div class="cart-item">
+                        <p class="cart-total">$2.00</p>
+                        <button class="addToCart" data-product-name="Sardines (Red)" data-product-price="$2.00">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <h4 class="cart-name"> Homi (Beef) </h4>
+                    <img src="./img/homi_beef.png" class="item-pic">
+                    <div class="cart-item">
+                        <p class="cart-total">$2.50</p>
+                        <button class="addToCart" data-product-name="Homi (Beef)" data-product-price="$2.50">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <h4 class="cart-name" id="mix"> Sinigang Mix </h4>
+                    <img src="./img/sinigang_mix.png" class="item-pic">
+                    <div class="cart-item">
+                        <p class="cart-total">$1.50</p>
+                        <button class="addToCart" data-product-name="Sinigang Mix" data-product-price="$1.50">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <h4 class="cart-name" id="biscuits"> Oreo </h4>
+                    <img src="./img/oreo.png" class="item-pic">
+                    <div class="cart-item">
+                        <p class="cart-total">$4.50</p>
+                        <button class="addToCart" data-product-name="Oreo" data-product-price="$4.50">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <h4 class="cart-name"> Hansel</h4>
+                    <img src="./img/hansel.png" class="item-pic pic-padding">
+                    <div class="cart-item">
+                        <p class="cart-total">$3.00</p>
+                        <button class="addToCart" data-product-name="Hansel" data-product-price="$3.00">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item" id="canton">
+                    <h4 class="cart-name"> Pancit Canton (Sweet) </h4>
+                    <img src="./img/pancit_canton sweet.png" class="item-pic pic-padding">
+                    <div class="cart-item">
+                        <p class="cart-total">$3.50</p>
+                        <button class="addToCart" data-product-name="Pancit Canton (Sweet)" data-product-price="$3.50">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <h4 class="cart-name"> Pancit Canton (Spicy) </h4>
+                    <img src="./img/pancit_canton spicy.png" class="item-pic">
+                    <div class="cart-item">
+                        <p class="cart-total">$3.50</p>
+                        <button class="addToCart" data-product-name="Pancit Canton (Spicy)" data-product-price="$3.50">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <h4 class="cart-name"> Pancit Canton (Calamansi) </h4>
+                    <img src="./img/pancit_canton calamansi.png" class="item-pic">
+                    <div class="cart-item">
+                        <p class="cart-total">$3.50</p>
+                        <button class="addToCart" data-product-name="Pancit Canton (Calamansi)" data-product-price="$3.50">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- mycart -->
+    <section class="mycart" id="cart">
+        <div class="buttons">
+            <div class="title">
+                <h1>Cart</h1>
+            </div>
+            <button class="totalBtn">
+                0
+            </button>
+            <button class="closeBtn">
+                Close
+            </button>
+        </div>
+    
+        
+        <div class="wrapper">
+           <!-- <div class="wrapper-cart">
+                <div class="cartname">
+                    <p>Sardines</p>
+                </div>
+                <div class="cartprice">
+                    <p class="cartPrice">$2.00</p>
+                </div>
+                <div class="cartquantity">
+                    <button class="minus">
+                        -
+                    </button>
+                    <p class="quantityNumber">1</p>
+                    <button class="plus">
+                        +
+                    </button>
+                    <i class="fa-solid fa-trash-can deleteBtn"></i>
+                </div>
+           </div> -->
+    
+           
+        </div>
+
+      
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

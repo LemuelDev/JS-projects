@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+background-color: #fff;
+color: #121212;
+}
+
+section {
+    max-width: 850px;
+    margin: 0 auto;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    place-content: center;
+    min-height: 100vh;
+    text-align: center;
+  
+}
+.wrapper-content {
+    padding: 2rem;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0, .3);
+    border-radius: 5px;
+    background-color: #cecece;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 1.5rem;
+}
+.card-child {
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0, .3);
+    border-radius: 5px;
+    width: 80px;
+    height: 80px;
+    background-color: #f2f2f2;
+}
+.wrapper-title {
+    font-size: 2rem;
+    padding-block: 1.3rem;
+    padding-block-end: .5rem;
+}
+.rollDice {
+    padding: .5rem 3rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(247, 169, 106);
+    font-size: 1.2rem;
+    font-weight: bold;
+    max-width: 450px;
+    margin: 1rem auto;
+    cursor: pointer;
+    transition: .3s all;
+}
+.rollDice:hover {
+    background-color: rgb(221, 157, 104);
+}
+.color-title {
+    padding-block: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.maximum {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.colors-content {
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    place-content: center;
+}
+.box p {
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-block: .5rem;
+}
+.colorBlue {
+    background-color: blue;
+    color: #fff;
+}
+.colorRed {
+    background-color: red;
+    color: #fff;
+}
+.colorYellow {
+    background-color: yellow;
+    color: #fff;
+}
+.colorPink {
+    background-color: Pink;
+    color: #fff;
+}
+.colorGreen {
+    background-color: green;
+    color: #fff;
+}
+.colorWhite {
+   background-color: white;
+   color: black;
+}
+.errorMsg {
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-block: .5rem;
+    letter-spacing: 1px;
+}
+
+.score {
+    text-align: end;
+    font-size: 1rem;
+    
+}

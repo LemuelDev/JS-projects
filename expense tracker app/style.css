@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    padding-block: 1rem;
+    padding-inline: 1rem;
+}
+
+.title {
+    padding-block: 2rem;
+    text-align: center;
+}
+.title h4 {
+    font-size: 3rem;
+}
+.title h6{
+    font-size: 1.5rem;
+    color: rgb(38, 190, 38);
+}
+
+.input-field {
+    display: grid;
+    place-content: center;
+    line-height: 2rem;
+}
+#expenseName {
+    min-width: 535px;
+    padding: .5rem;
+    font-size: 1rem;
+    caret-color: green;
+    outline-color: green;
+}
+
+#dateInput, #amountInput {
+    min-width: 250px;
+    padding: .5rem;
+    font-size: 1rem;
+    caret-color: green;
+    outline-color: green;
+}
+.date-amount {
+    display: flex;
+    gap: 1rem;
+    padding-block: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.submitExpense {
+    max-width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    padding-inline: 1rem;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    background-color: green;
+    color: #fff;
+}
+.table-area {
+    display: grid;
+    place-content:center;
+    padding-top: 2rem;
+    text-align: center;
+
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td, .tables{
+    padding: 20px;
+    text-align:center;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  table tr:hover {
+    background-color: #f2f2f2;
+  }
+
+  table td li {
+    list-style: none;
+}
+
+table td button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: green;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+.errormsg {
+    padding-block: 1rem;
+    text-align: center;
+    font-size: 1.1em;
+    color: red;
+}
+.credits {
+    text-align: center;
+    font-size: 1.3rem;
+    color: green;
+    padding-top: 2rem;
+}

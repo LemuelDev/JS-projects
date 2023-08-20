@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #34263a;
+    color: #Fff;
+}
+
+.main {
+    display: grid;
+    place-content: center;
+    align-items: center;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    min-height: 100vh;
+    background: url(./assets/layered-steps-haikei.svg) no-repeat center;
+    background-size: cover;
+}
+.wrapper{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px (0,0,0, .5);
+    background-color: #27202a;
+    padding-inline: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.title {
+    padding-block: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80px;
+    align-items: center;
+    gap: 1em;
+
+}
+
+#celsiusbox, #fahbox, #kelbox{
+    padding: .6em .8em;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+    transition: .3s all;
+    background-color: #4a474b;
+    color: #fff;
+}
+#celsiusbox:hover, #fahbox:hover, #kelbox:hover {
+    background-color: #383439;
+}
+
+.celsius-title, .fah-title {
+    font-size: 1.1em;
+    padding-block: 1em;
+    letter-spacing: 1px;
+    text-align: center;
+}
+#convert1, #convert2, #convert3 {
+    padding: .5em .7em;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #Fff;
+    background-color: #694a73;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    margin-left: .5em;
+    cursor: pointer;
+    transition: .3s all;
+}
+#convert1:hover, #convert2:hover, #convert3:hover {
+    background-color: #362953;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <main>
+        <div class="title">
+            <h4> Expense Tracker </h4>
+            <h6> Add a New Item: </h6>
+        </div>
+        
+        <div class="input-field">
+            <div class="name">
+                <p>Name:</p>
+                <input type="text" id="expenseName" placeholder="Where was the expense made?">
+            </div>
+            <div class="date-amount">
+                    <div class="date">
+                        <p>Date:</p>
+                        <input type="date"  id="dateInput">
+                    </div>
+                    <div class="amount">
+                        <p>Amount:</p>
+                        <input type="number" id="amountInput" placeholder="Enter Amount">
+                    </div>
+               
+            </div>
+            <button class="submitExpense">
+                Add Expense
+            </button>
+            <p class="errormsg">
+
+            </p>
+        </div>
+
+        <div class="table-area">
+            <table border="1px" cellpadding="35" class="mainTable">
+                <tr>
+                    <td>Name</td>
+                    <td>Date</td>
+                    <td>Amount</td>
+                    <td> Delete</td>
+                </tr>
+
+                
+            </table>
+        </div>
+
+        <p class="credits">
+            @lemueldev30
+        </p>
+
+    </main>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

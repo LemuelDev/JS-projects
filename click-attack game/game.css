@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #002233;
+    color: #fff;
+}
+section {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.title {
+    padding-bottom: 6rem;
+    font-size: 1.5rem;
+}
+.title h4 {
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    gap: 3rem;
+    padding-inline: 1rem;
+}
+.left-content, .right-content {
+    display: grid;
+    padding: 10px;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    box-shadow: 2px 2px 2px 2px #013752;
+}
+.left-content {
+    padding-inline: 3.5rem;
+}
+.life {
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.left-content i , .right-content i {
+    font-size: 2rem;
+    padding: 1rem 0 2rem;
+}
+.left-content p , .right-content p {
+    font-size: 1.3rem;
+}
+.attack-btn {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: .8rem 3rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #013752;
+    color: white;
+    cursor: pointer;
+    transition: .3s ;
+}
+.attack-btn:hover {
+    background-color: #0a4b6b;
+}
+.trashtalk-text {
+    text-align: center;
+    font-size: 1.3rem;
+}
+@media(max-width: 385px) {
+    .left-content, .right-content{
+        padding-inline: 1.5rem;
+    }
+    .title h4 {
+        font-size: 1.5rem;
+    }
+    .wrapper {
+        padding-inline: .3rem;
+    }
+}

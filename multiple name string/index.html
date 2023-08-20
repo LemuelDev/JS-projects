@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Name String</title>
+
+    <style>
+        .title {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .title h4 {
+            font-size: 1.5rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="title">
+        <h4>I'm a <span class="text">Developer</span></h4>
+    </div>
+
+    <script>
+        const text = document.querySelector('.text')
+
+        const jobTitle = ['Developer','Designer', 'Engineer' ]
+
+        let index = 0
+
+        function changeText () {
+            text.textContent = jobTitle[index]
+            index = (index + 1) % jobTitle.length;
+            console.log(index);
+
+        }
+        setInterval(changeText, 4000)
+
+    </script>
+
+
+</body>
+</html>
